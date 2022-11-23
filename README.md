@@ -25,6 +25,8 @@ Install dependencies that are not part of Reaktoro
 
 > conda install pandas scipy astropy matplotlib
 
+Further information on Reaktoro can be found here https://reaktoro.org/intro.html
+
 # Running OCRA #
 
 ## Example ##
