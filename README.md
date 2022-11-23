@@ -3,7 +3,7 @@
 
 # Overview #
 
-OCRA (Ocean Chemistry with Reaktoro And beyond) is a code to simulate water ocean chemistry. This code makes use of Reaktoro v2 for modelling chemistry.
+OCRA (Ocean Chemistry with Reaktoro And beyond) is a code to simulate water ocean chemistry. This code calculates ocean pH and the amounts of aqueous, gaseous and mineral phases with a special focus on pure Ca, Mg and Fe carbonate systems. This code makes use of Reaktoro v2 for modelling ocean chemistry.
 
 # Installation #
 
