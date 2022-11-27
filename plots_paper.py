@@ -74,7 +74,7 @@ CaCCD_PCO2_T(totnum = 20, numQ1 = 100, numQ2 = 100)
 
 
 # Plot Mg-CCD as a function of PCO2 and T with no silicates
-MgCCD_PCO2_T(beta = 0.3, totnum = 20, numQ1 = 100, numQ2 = 100)
+MgCCD_PCO2_T(nSiO2 = 0, totnum = 20, numQ1 = 100, numQ2 = 100)
 
 
 # In[14]:

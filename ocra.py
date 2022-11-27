@@ -442,7 +442,7 @@ def MgCCD_PCO2_T(beta = 0.3, nSiO2 = 1, nDIV = 1, totnum = 10, numQ1 = 10, numQ2
                 else:
                     j = j + 1
     
-    output_CaCCD_PCO2_T(PCO2s, Temps, CCDs, beta = beta, nSiO2 = nSiO2, nDIV = nDIV,
+    output_MgCCD_PCO2_T(PCO2s, Temps, CCDs, beta = beta, nSiO2 = nSiO2, nDIV = nDIV,
                         plot_flag = plot_flag, table_flag = table_flag)
         
     return
@@ -509,7 +509,7 @@ def FeCCD_PCO2_T(beta = 0.3, nSiO2 = 1, nDIV = 1, totnum = 10, numQ1 = 10, numQ2
                 else:
                     j = j + 1
     
-    output_CaCCD_PCO2_T(PCO2s, Temps, CCDs, beta = beta, nSiO2 = nSiO2, nDIV = nDIV,
+    output_FeCCD_PCO2_T(PCO2s, Temps, CCDs, beta = beta, nSiO2 = nSiO2, nDIV = nDIV,
                         plot_flag = plot_flag, table_flag = table_flag)
         
     return
