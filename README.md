@@ -7,7 +7,7 @@ OCRA (Ocean Chemistry with Reaktoro And beyond) is a code to simulate water ocea
 
 # Installation #
 
-The code is written in Python. Before you can run OKRA on your computer, Python 3 needs to be installed. Additionally, the following libraries are required. 
+The code is written in Python. Before runnning OCRA on a personal computer, Python 3 needs to be installed. Additionally, the following libraries are required. Please follow the steps below. 
 
 Reaktoro installation
 
