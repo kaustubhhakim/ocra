@@ -31,6 +31,10 @@ Install dependencies that are not part of Reaktoro
 
 Further information on Reaktoro can be found here https://reaktoro.org/intro.html
 
+Download ocra
+
+> git clone https://github.com/kaustubhhakim/ocra.git
+
 # Running OCRA #
 
 ## Example ##
