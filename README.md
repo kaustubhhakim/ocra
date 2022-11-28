@@ -9,6 +9,10 @@ OCRA (Ocean Chemistry with Reaktoro And beyond) is a code to simulate water ocea
 
 The code is written in Python. Before runnning OCRA on a personal computer, Python 3 needs to be installed. Additionally, the following libraries are required. Please follow the steps below. 
 
+Add conda-forge channel to find Reaktoro
+
+> conda config --add channels conda-forge
+
 New conda environment
 
 > conda create --name ocra reaktoro
@@ -16,10 +20,6 @@ New conda environment
 Activate conda environment
 
 > conda activate ocra
-
-Add conda-forge channel to find Reaktoro
-
-> conda config --add channels conda-forge
 
 Reaktoro installation
 
