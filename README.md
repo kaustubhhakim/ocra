@@ -1,11 +1,11 @@
 # OCRA #
 #### Author: Kaustubh Hakim ####
 
-# Overview #
+# 1. Overview #
 
 OCRA (Ocean Chemistry with Reaktoro And beyond) is a code to simulate water ocean chemistry. This code calculates ocean pH and the amounts of aqueous, gaseous and mineral phases with a special focus on pure Ca, Mg and Fe carbonate systems. This code makes use of Reaktoro v2 (https://reaktoro.org/intro.html) for modelling ocean chemistry.
 
-# Installation #
+# 2. Installation #
 
 The code is written in Python 3. Before using OCRA on a personal computer, conda needs to be installed (https://conda.io/en/latest/).
 
@@ -37,7 +37,7 @@ Enter ocra directory
 
 > cd ocra/
 
-# Running OCRA #
+# 3. Running OCRA #
 
 ## Example ##
 
@@ -51,6 +51,6 @@ The following command generates and saves tables in CSV format and figures in PD
 
 > python plots_paper.py
 
-# References #
+# 4. References #
 
 Hakim et al. (2023)
