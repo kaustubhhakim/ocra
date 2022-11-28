@@ -13,10 +13,6 @@ Add conda-forge channel to find Reaktoro
 
 > conda config --add channels conda-forge
 
-Reaktoro installation
-
-> conda install reaktoro
-
 New conda environment
 
 > conda create --name ocra reaktoro
