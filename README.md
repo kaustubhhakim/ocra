@@ -7,29 +7,31 @@ OCRA (Ocean Chemistry with Reaktoro And beyond) is a code to simulate water ocea
 
 ## 2. Installation ##
 
-The code is written in Python 3. Before using OCRA on a personal computer, conda needs to be installed (https://conda.io/en/latest/).
+OCRA is written in Python 3 and requires a Reaktoro conda environment: https://reaktoro.org/installation/installation-using-conda.html
 
-Please follow the steps below to install required libraries. 
+If conda is not installed, please follow conda installation instructions: https://conda.io/projects/conda/en/stable/user-guide/install/index.html
+
+Before using OCRA, please follow the steps below to install required libraries. 
 
 Add conda-forge channel to find Reaktoro
 
 > conda config --add channels conda-forge
 
-Create new conda environment
+Create new conda environment and install Reaktoro and its dependencies
 
-> conda create --name ocra reaktoro
+> conda create --name rkt reaktoro
 
 Activate conda environment
 
-> conda activate ocra
+> conda activate rkt
 
-Install dependencies that are not part of Reaktoro
+Install OCRA dependencies that are not part of Reaktoro installation
 
 > conda install pandas scipy astropy matplotlib
 
 Further information on Reaktoro can be found here https://reaktoro.org/intro.html
 
-Download ocra directly or using git
+Download OCRA directly or using git
 
 > git clone https://github.com/kaustubhhakim/ocra.git
 
@@ -41,7 +43,7 @@ Go to ocra directory
 
 ### Example ###
 
-After the installation, you can test if OCRA is working by running the following command. This command generates and saves three figures and three csv tables.
+After the installation, you can test if OCRA is working by running the following command. This command generates and saves three figures and three csv tables in the ocra directory.
 
 > python plots_example.py
 
