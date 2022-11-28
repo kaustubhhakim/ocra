@@ -31,6 +31,10 @@ Download ocra
 
 > git clone https://github.com/kaustubhhakim/ocra.git
 
+Enter ocra directory
+
+> cd ocra/
+
 # Running OCRA #
 
 ## Example ##
