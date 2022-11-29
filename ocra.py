@@ -8,9 +8,6 @@
 # 
 # ### okra.py # contains functions to calculate ocean pH, CCD and stable phases
 
-# In[ ]:
-
-
 # Import libraries
 
 import numpy as np
@@ -19,10 +16,6 @@ import pandas as pd
 from store import *
 from solve import *
 from output import *
-
-
-# In[ ]:
-
 
 # Calculate pH as a function of PCO2 for Ca, Mg or Fe systems
 
@@ -151,9 +144,6 @@ def pH_PCO2(DIV = 'Ca', totP = 1, Temp = 288, nDIV = 1, nSiO2 = 1, totnum = 100,
     return
 
 
-# In[ ]:
-
-
 # Calculate analytical and numerical solutions of ocean pH
 
 def pH_PCO2_an(DIV = 'Ca', totP = 1, Temp = 288, nDIV = 1, nSiO2 = 1, totnum = 100, nDIV_fixed = 1,
@@ -202,9 +192,6 @@ def pH_PCO2_an(DIV = 'Ca', totP = 1, Temp = 288, nDIV = 1, nSiO2 = 1, totnum = 1
                           plot_flag = plot_flag, table_flag = table_flag)
     
     return
-
-
-# In[ ]:
 
 
 # Calculate ocean pH as a function of local pressure
@@ -259,9 +246,6 @@ def pH_P(DIV = 'Ca', PCO2 = 0.3e-3, Temp = 288, nDIV = 1, nSiO2 = 1, totnum = 10
     return
 
 
-# In[ ]:
-
-
 # Calculate ocean pH as a function of temperature
 
 def pH_T(DIV = 'Ca', PCO2 = 0.3e-3, totP = 1, nDIV = 1, nSiO2 = 1, totnum = 100,
@@ -312,9 +296,6 @@ def pH_T(DIV = 'Ca', PCO2 = 0.3e-3, totP = 1, nDIV = 1, nSiO2 = 1, totnum = 100,
         output_pH_T(Temps, chems2, DIV = DIV, plot_flag = plot_flag, table_flag = table_flag)
     
     return
-
-
-# In[ ]:
 
 
 # Calculate Ca-CCD as a function of PCO2 and T
@@ -381,9 +362,6 @@ def CaCCD_PCO2_T(beta = 0.3, nSiO2 = 1, nDIV = 1, totnum = 10, numQ1 = 10, numQ2
     return
 
 
-# In[ ]:
-
-
 # Calculate Mg-CCD as a function of PCO2 and T
 
 def MgCCD_PCO2_T(beta = 0.3, nSiO2 = 1, nDIV = 1, totnum = 10, numQ1 = 10, numQ2 = 10,
@@ -448,9 +426,6 @@ def MgCCD_PCO2_T(beta = 0.3, nSiO2 = 1, nDIV = 1, totnum = 10, numQ1 = 10, numQ2
     return
 
 
-# In[ ]:
-
-
 # Calculate Fe-CCD as a function of PCO2 and T
 
 def FeCCD_PCO2_T(beta = 0.3, nSiO2 = 1, nDIV = 1, totnum = 10, numQ1 = 10, numQ2 = 10,
@@ -513,9 +488,6 @@ def FeCCD_PCO2_T(beta = 0.3, nSiO2 = 1, nDIV = 1, totnum = 10, numQ1 = 10, numQ2
                         plot_flag = plot_flag, table_flag = table_flag)
         
     return
-
-
-# In[ ]:
 
 
 # Calculate stable phases as a function of PCO2

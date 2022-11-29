@@ -8,8 +8,7 @@
 # 
 # ### output.py # contains functions to output plots and csv tables
 
-# In[ ]:
-
+# Import libraries
 
 import numpy as np
 import pandas as pd
@@ -17,7 +16,6 @@ import pandas as pd
 from store import *
 
 import matplotlib.pyplot as plt
-# plt.rcParams['pcolor.shading'] ='nearest'
 import matplotlib.gridspec as gridspec
 from matplotlib import ticker
 
@@ -27,9 +25,6 @@ col1 = get_cmap('Dark2').colors  # type: matplotlib.colors.ListedColormap
 col2 = get_cmap('Set1').colors
 col3 = get_cmap('Set3').colors
 colors = col1 + col2 + col3
-
-
-# In[ ]:
 
 
 # Plot analytical and numerical limits of pH as a function of PCO2
@@ -247,9 +242,6 @@ def output_pH_PCO2(PCO2s, chems2, DIV = 'Ca', plot_flag = True, table_flag = Tru
     return
 
 
-# In[ ]:
-
-
 # Plot numerical and analytical limits of pH as a function of PCO2
 
 def output_pH_PCO2_an(PCO2s, chems2, chems2_an, chems2_san, DIV = 'Ca', nDIV_fixed = 1,
@@ -326,9 +318,6 @@ def output_pH_PCO2_an(PCO2s, chems2, chems2_an, chems2_san, DIV = 'Ca', nDIV_fix
             # plt.savefig('pHan_PCO2_Ca.pdf', bbox_inches='tight')
             
     return
-
-
-# In[ ]:
 
 
 # Plot pH as a function of local pressure
@@ -408,9 +397,6 @@ def output_pH_P(totPs, chems2, DIV = 'Ca', plot_flag = True, table_flag = True):
     return
 
 
-# In[ ]:
-
-
 # Plot pH as a function of temperature
 
 def output_pH_T(Temps, chems2, DIV = 'Ca', plot_flag = True, table_flag = True):
@@ -484,9 +470,6 @@ def output_pH_T(Temps, chems2, DIV = 'Ca', plot_flag = True, table_flag = True):
             # plt.savefig('pH_T_Ca.pdf', bbox_inches='tight')
             
     return
-
-
-# In[ ]:
 
 
 # Output Ca-CCD as a function of PCO2 and T
@@ -629,9 +612,6 @@ def plot_CaCCD_PCO2_T(PCO2s, Temps, CCDs, beta = 0.3, nSiO2 = 1, nDIV = 1):
     return
 
 
-# In[ ]:
-
-
 # Plot Mg-CCD as a function of PCO2 and T
 
 def output_MgCCD_PCO2_T(PCO2s, Temps, CCDs, beta = 0.3, nSiO2 = 1, nDIV = 1, 
@@ -772,15 +752,6 @@ def plot_MgCCD_PCO2_T(PCO2s, Temps, CCDs, beta = 0.3, nSiO2 = 1, nDIV = 1):
     return
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 # Plot Fe-CCD as a function of PCO2 and T
 
 def output_FeCCD_PCO2_T(PCO2s, Temps, CCDs, beta = 0.3, nSiO2 = 1, nDIV = 1, 
@@ -905,8 +876,7 @@ def plot_FeCCD_PCO2_T(PCO2s, Temps, CCDs, beta = 0.3, nSiO2 = 1, nDIV = 1):
     return
 
 
-# In[ ]:
-
+# Output stable phases as a function of PCO2
 
 def output_phases_PCO2(df, DIV = 'Ca', beta = 0.3, nDIV = 1, nSiO2 = 1, table_flag = True, plot_flag = True):
     '''
@@ -949,9 +919,6 @@ def output_phases_PCO2(df, DIV = 'Ca', beta = 0.3, nDIV = 1, nSiO2 = 1, table_fl
             plot_phases_PCO2(df, DIV = DIV, beta = beta, nDIV = nDIV, nSiO2 = nSiO2)
             
     return
-
-
-# In[ ]:
 
 
 # Plot stable phases as a function of PCO2
