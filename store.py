@@ -8,14 +8,11 @@
 # 
 # ### store.py # contains analytical functions and dictionary objects to store data
 
-# In[ ]:
 
+# Import libraries
 
 import numpy as np
 from astropy.constants import R
-
-
-# In[ ]:
 
 
 # Set global constants
@@ -26,9 +23,6 @@ totH2O = 55.5 # moles
 totN2 = 0.1 # moles --- produces pressure equivalent to 0.8 bar
 
 low_cutoff = 1e-10 # mol/m3
-
-
-# In[ ]:
 
 
 # Analytical functions and scaling relations
@@ -70,9 +64,6 @@ def weath_scaling(PCO2, T, beta = 0.3, Ea = 31e3, delT = 13.7):
         scaling = (PCO2 / PCO20)**beta * np.exp(-Ea/R.value * (1/T - 1/T0)) 
     
     return scaling
-
-
-# In[ ]:
 
 
 # Custom dictionary objects to save chemical species as number density [dm^-3]
@@ -150,9 +141,6 @@ def chem_dict3(numQ1,numQ2,totnum):
     return chem
 
 
-# In[ ]:
-
-
 # Save chemical species in 1D dictionary objects in units of number density [dm^-3] 
 
 def save_chems1_Ca(state, PCO2, chems1, j):
@@ -220,9 +208,6 @@ def save_chems1_Fe(state, PCO2, chems1, j):
     chems1['pH'][j] = -np.log10(state.speciesAmount('H+')[0])
             
     return chems1
-
-
-# In[ ]:
 
 
 # Save chemical species in 2D dictionary objects in units of number density [dm^-3] 
@@ -307,9 +292,6 @@ def save_chems2_Fe(state, PCO2, chems2, i, j):
     chems2['pH'][i][j] = -np.log10(state.speciesAmount('H+')[0])
     
     return chems2
-
-
-# In[ ]:
 
 
 # Save chemical species in 3D dictionary objects in units of number density [dm^-3] 

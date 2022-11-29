@@ -8,15 +8,10 @@
 # 
 # ### solve.py # contains functions to setup and solve chemical systems using Reaktoro
 
-# In[ ]:
-
+# Import libraries
 
 from reaktoro import *
 from store import *
-
-
-# In[ ]:
-
 
 # Setup Reaktoro to solve ocean chemistry
 
@@ -122,9 +117,6 @@ def setup_Fe():
     return system, specs, solver
 
 
-# In[ ]:
-
-
 # Solve Reaktoro ocean chemistry system
 
 def solve_Ca(system, specs, solver, addDIVtot, addSiO2, PCO2, Temp, totP):
@@ -147,8 +139,6 @@ def solve_Ca(system, specs, solver, addDIVtot, addSiO2, PCO2, Temp, totP):
 
     result = solver.solve(state, conditions)
 
-#    assert result.optima.succeeded
-    
     return state
 
 def solve_Mg(system, specs, solver, addDIVtot, addSiO2, PCO2, Temp, totP):
@@ -171,8 +161,6 @@ def solve_Mg(system, specs, solver, addDIVtot, addSiO2, PCO2, Temp, totP):
 
     result = solver.solve(state, conditions)
 
-#    assert result.optima.succeeded
-    
     return state
 
 def solve_Fe(system, specs, solver, addDIVtot, addSiO2, PCO2, Temp, totP):
@@ -195,7 +183,4 @@ def solve_Fe(system, specs, solver, addDIVtot, addSiO2, PCO2, Temp, totP):
 
     result = solver.solve(state, conditions)
 
-#    assert result.optima.succeeded
-    
     return state
-
