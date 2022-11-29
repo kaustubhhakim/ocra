@@ -11,7 +11,7 @@ OCRA is written in Python 3 and requires a Reaktoro conda environment: https://r
 
 If conda is not installed, please follow conda installation instructions: https://conda.io/projects/conda/en/stable/user-guide/install/index.html
 
-Before using OCRA, please follow the steps below to install required libraries. 
+Before using OCRA, please follow the steps below. 
 
 Add conda-forge channel to find Reaktoro
 
